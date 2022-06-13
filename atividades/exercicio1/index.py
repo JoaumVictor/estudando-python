@@ -43,9 +43,10 @@ def bloco2(n):
 
 # bloco2(5)
 
-# Exercício 4: Crie uma função que receba uma lista de nomes e retorne o nome com a maior quantidade de
-#  caracteres. Por exemplo, para ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"], o retorno deve
-#  ser "Fernanda".
+# Exercício 4: Crie uma função que receba uma lista de nomes e retorne o nome
+# com a maior quantidade de caracteres. Por exemplo, para
+# ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"],
+#  o retorno deveser "Fernanda".
 
 def findbiggestword(array):
     resultado = ""
@@ -54,14 +55,16 @@ def findbiggestword(array):
             resultado = palavra
     print(resultado)
 
+
 nomes = ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Victor"]
 # findbiggestword(nomes)
 
 
-# Exercício 5: Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é
-# vendida em latas de 18 litros, que custam R$ 80,00. Crie uma função que retorne dois valores em uma tupla 
-# contendo a quantidade de latas de tinta a serem compradas e o preço total a partir do tamanho de uma 
-# parede(em m²).
+# Exercício 5: Considere que a cobertura da tinta é de 1 litro para cada 3
+# metros quadrados e que a tinta é vendida em latas de 18 litros, que custam
+# R$ 80,00. Crie uma função que retorne dois valores em uma tupla contendo a
+#  quantidade de latas de tinta a serem compradas e o preço total a partir do
+#  tamanho de uma parede(em m²).
 
 # 1 lata = 54 metros = R$80
 
@@ -75,20 +78,25 @@ def calculateInk(meters):
 
 # calculateInk(70)
 
-#Exercício 6: Crie uma função que receba os três lado de um triângulo e informe qual o tipo de triângulo
-# formado ou "não é triangulo", caso não seja possível formar um triângulo.
+# Exercício 6: Crie uma função que receba os três lado de um triângulo
+# e informe qual o tipo de triângulo formado ou "não é triangulo", caso
+# não seja possível formar um triângulo.
+
 
 def informTriangleType(v1, v2, v3):
     erro = "Isso não é um triângulo!"
+    t1 = "Triângulo Equilátero: três lados iguais!"
+    t2 = "Triângulo Isósceles: quaisquer dois lados iguais!"
+    t3 = "Triângulo Escaleno: três lados diferentes."
     if(v1 + v2 > v3):
         if(v1 + v3 > v2):
             if(v2 + v3 > v1):
                 if(v1 == v2 and v2 == v3):
-                    return print("Triângulo Equilátero: três lados iguais!")
+                    return print(t1)
                 elif(v1 == v2 or v2 == v3 or v1 == v3):
-                    return print("Triângulo Isósceles: quaisquer dois lados iguais!")
+                    return print(t2)
                 else:
-                    return print("Triângulo Escaleno: três lados diferentes.")
+                    return print(t3)
             print("erro no terceiro if")
         print("erro no segundo if")
     print(erro)
