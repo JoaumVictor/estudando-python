@@ -4,3 +4,4 @@ while True:
         break
     except ValueError:
         print("Ué, isso não foi um número inteiro, tente de novo...")
+        
