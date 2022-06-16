@@ -10,7 +10,12 @@ print("Evangelion", file=my_list)
 print("Shingeki No Kyojin", file=my_list)
 print("Overlord", file=my_list)
 
-more_animes = ["Kimetsu No Yaba\n", "Shingatsu Wa Kimi No Uso\n", "Your Name\n", "Ishuzoku Revierws"]
+more_animes = [
+    "Kimetsu No Yaba\n",
+    "Shingatsu Wa Kimi No Uso\n",
+    "Your Name\n",
+    "Ishuzoku Revierws"]
+
 my_list.writelines(more_animes)
 
 my_list.close()
