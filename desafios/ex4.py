@@ -1,0 +1,10 @@
+while True:
+    print("=========================================")
+    valor = input("Digite Algo:\n")
+    print(f"O tipo desse valor é? {type(valor)}")
+    print(f"O valor digitado é maiusculo? {valor.isupper()}")
+    print(f"O valor digitado é minusculo? {valor.islower()}")
+    print(f"O valor dé númerico? {valor.isnumeric()}")
+    print(f"O valor é alfabético? {valor.isalpha()}")
+    print(f"O valor é alfa numérico? {valor.isalnum()}")
+    print("=========================================")
